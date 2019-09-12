@@ -10,9 +10,9 @@ public class App {
 	public static void main(String[] args) {
 		
 		List<Aluno> alunos = new ArrayList<Aluno>();
-		Avaliacao prova1 = new Avaliacao();
-		
-		System.out.println("oi ");
+		Avaliacao prova1 = new Avaliacao("Matematica", "12/09/19","Messias");
+		Aluno c1 = new Aluno (31,"Gustavo Sumi",10.0);
+		System.out.println(c1.getNome()+" "+ c1.id());
 	
 	}
 }
