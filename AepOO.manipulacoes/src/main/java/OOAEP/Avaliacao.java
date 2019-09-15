@@ -14,7 +14,7 @@ public class Avaliacao {
 		this.avaliacao=avaliacao;
 		this.data = data;
 		if(professor == null) {
-			throw new RuntimeException("É necessário inserir um professor para aplicar a prova!!");
+			throw new RuntimeException("É necessário inserir um professor para aplicar a prova!");
 		}
 		this.professor = professor;
 		
