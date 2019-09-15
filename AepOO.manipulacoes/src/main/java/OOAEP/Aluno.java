@@ -28,7 +28,7 @@ public class Aluno {
 	public static void imprimir(List<Avaliacao> turmas) {
 		System.out.println("-------------------------");
 		for (Avaliacao turma : turmas) {
-			System.out.println("Turma: " + turma.getProfessor() + "| Data: "+ turma.getData());
+			System.out.println("Turma: " + turma.getProfessor()+"| "+ turma.getAvaliacao() + "| Data: "+ turma.getData());
 			for (Aluno aluno : turma.getAluno()) {
 				System.out.println("Alunos: " + aluno.getNome());
 				
