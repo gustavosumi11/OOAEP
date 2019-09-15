@@ -14,7 +14,7 @@ public class App {
 		Aluno a112 = new Aluno (2, "Felipe",5);
 		Aluno a113 = new Aluno (3,"Larissa",7);
 		Aluno a114 = new Aluno (4,"Fernanda",3);
-		Aluno a115 = new Aluno (5,"Clara",4);
+		
 		
 		
 				
