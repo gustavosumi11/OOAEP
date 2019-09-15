@@ -19,11 +19,24 @@ public class Avaliacao {
 		this.professor = professor;
 		
 	}
-	public void adicionarAluno (Aluno aluno) {
-		if (!this.alunos.contains(aluno)) { 
-			this.alunos.add(aluno);
-			aluno.setAvaliacao(this);
+	public void adicionarTurma (Aluno turma) {
+		if (!this.alunos.contains(turma)) { 
+			this.alunos.add(turma);
+			//turma.setAvaliacaoTurma(this);
 		}
+	}
+	public List<Aluno> getAluno() {
+		return alunos;
+	}
+	
+	public String getAvaliacao() {
+		return avaliacao;
+	}
+	public String getData() {
+		return data;
+	}
+	public String getProfessor() {
+		return professor;
 	}
 	
 }

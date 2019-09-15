@@ -1,12 +1,14 @@
 package AEP.Conceito;
 
+import java.util.List;
 
+import aula20190903.associações.Cultivar;
 
 public class Aluno {
 	private String nome;
 	private double nota;
 	private double id;
-	private Avaliacao avaliacao;
+	
 	
 	public Aluno (double id,String nome, double nota ) {
 		
@@ -23,10 +25,20 @@ public class Aluno {
 	public double id() {
 		return id;
 	}
-	public void setAvaliacao(Avaliacao avaliacao) {
+	public static void imprimir(List<Avaliacao> turmas) {
+		System.out.println("-------------------------");
+		for (Avaliacao turma : turmas) {
+			System.out.println("Turma: " + turma.getProfessor() + "| Data: "+ turma.getData());
+			for (Aluno aluno : turma.getAluno()) {
+				System.out.println("Alunos: " + aluno.getNome());
+				
+			}
+			
+		}
 		
-		this.avaliacao = avaliacao;
-		this.avaliacao.adicionarAluno(this);
 	}
 	
-}
+	}
+
+	
+
