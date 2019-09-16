@@ -39,7 +39,6 @@ public class App {
 		prova2.adicionarTurma(a114);
 		
 		
-		
 	
 		//adcionando provas
 		turmas.add(prova1);
@@ -47,9 +46,6 @@ public class App {
 		
 		nota.add(matematica);
 
-		
-		
-		
 		aep();
 		//Imprimi as materias e resultado
 		Aluno.imprimir(turmas);
