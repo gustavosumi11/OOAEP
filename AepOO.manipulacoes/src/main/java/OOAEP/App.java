@@ -36,7 +36,7 @@ public class App {
 		prova2.adicionarTurma(a111);
 		prova1.adicionarTurma(a112);
 		prova2.adicionarTurma(a113);
-		prova2.adicionarTurma(a114);
+		
 		
 		
 	

@@ -5,8 +5,8 @@ import java.util.List;
 
 
 public class Aluno {
-	private static double numeroDeAlunos;
-	private static double var;
+	
+	private static double media;
 	private String nome;
 	//private double nota;
 	private Integer id;
@@ -39,11 +39,11 @@ public class Aluno {
 			System.out.println("Turma: " + turma.getProfessor()+"| "+ turma.getAvaliacao() + "| Data: "+ turma.getData());
 			for (Aluno aluno : turma.getAluno()) {
 				System.out.println("ID: "+aluno.id+" "+"Nome: " + aluno.getNome()+ " "+ aluno.nota());
-				var=aluno.nota+var;
+				media=aluno.nota+media;
 	
 			}
 			
-				System.out.println("Média da turma: "+ var/turmas.size());
+				System.out.println("Média da turma: "+ media/turmas.size());
 				
 				
 			}
