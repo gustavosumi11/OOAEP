@@ -5,18 +5,24 @@ import java.util.List;
 
 
 public class Avaliacao {
+
+	private double nota;
 	private String avaliacao;
 	private String data;
 	private String professor;
+	private Integer codDisciplina;
 	private List<Aluno> alunos = new ArrayList<Aluno>();
+	private List<Notas> notas = new ArrayList<Notas>();
 	
-	public Avaliacao(String avaliacao, String data, String professor) {
+	public Avaliacao(String avaliacao, String data, String professor, Integer codDisciplina) {
 		this.avaliacao=avaliacao;
 		this.data = data;
-		if(professor == null) {
-			throw new RuntimeException("É necessário inserir um professor para aplicar a prova!");
-		}
+		this.codDisciplina= codDisciplina;
 		this.professor = professor;
+		
+	}
+	public List<Notas> getNota() {
+		return notas;
 		
 	}
 	public void adicionarTurma (Aluno turma) {
@@ -38,5 +44,11 @@ public class Avaliacao {
 	public String getProfessor() {
 		return professor;
 	}
+	public double setNotas() {
+		return nota;
+	}
+		
+		
+	
 	
 }
